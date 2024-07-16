@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Profile Name -->
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanmay Agarwal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/profileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Profile Email -->
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="agarwaltanmay401@gmail.com"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/profileName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp" />
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Edit Profile"
+        android:backgroundTint="@color/main"
+        app:layout_constraintTop_toBottomOf="@id/profileEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp" />
+
+    <!-- Divider Line -->
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/editProfileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp" />
+
+    <!-- Options Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/dividerLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="20dp">
+
+        <!-- Settings -->
+        <TextView
+            android:id="@+id/settingsOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:text="Settings"
+            android:drawableStart="@drawable/ic_settings"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_square"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow_right" />
+
+        <!-- Billing Details -->
+        <TextView
+            android:id="@+id/billingDetailsOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:text="Billing Details"
+            android:drawableStart="@drawable/ic_billing"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_square"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow_right" />
+
+        <!-- User Management -->
+        <TextView
+            android:id="@+id/userManagementOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:text="User Management"
+            android:drawableStart="@drawable/ic_user_management"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_square"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow_right" />
+
+        <!-- Information -->
+        <TextView
+            android:id="@+id/informationOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:text="Information"
+            android:drawableStart="@drawable/ic_information"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_square"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow_right" />
+
+        <!-- Logout -->
+        <TextView
+            android:id="@+id/logoutOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Logout"
+            android:drawableStart="@drawable/ic_logout"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:background="@drawable/bg_square"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_arrow_right" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

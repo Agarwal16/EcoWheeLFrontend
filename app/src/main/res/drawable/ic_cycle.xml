@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Rear Wheel -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M6,18a4,4 0 1,1 0,-8a4,4 0 1,1 0,8zM6,11a3,3 0 1,0 0,6a3,3 0 1,0 0,-6z"/>
+
+    <!-- Front Wheel -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M18,18a4,4 0 1,1 0,-8a4,4 0 1,1 0,8zM18,11a3,3 0 1,0 0,6a3,3 0 1,0 0,-6z"/>
+
+    <!-- Frame -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M7,15l2,-3h3.5l2,4h1.5l-2,-4h1l2.5,3.5h1.5l-2.5,-3.5h1v-1h-3.5l-2,3H7z"/>
+
+    <!-- Seat -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M10.5,6h3v1h-3z"/>
+
+    <!-- Handlebars -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M15,7.5h-6l1,1.5h4z"/>
+
+    <!-- Pedals -->
+    <path
+        android:fillColor="#000"
+        android:pathData="M11.25,12.25h.5v.5h-.5z"/>
+</vector>
